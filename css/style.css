@@ -15,7 +15,6 @@ main{
     left: 50%;
     transform: translate(-50%,0%);
     height: 90vh;
-    background-color: red;
 }
 
 .left-column{
@@ -42,9 +41,12 @@ main{
 
 .profile-buttons,
 .chat-buttons,
-.text-message .fas,.far,
-.grey{
+.text-message .fas,.far{
     color: #b1b1b1;
+}
+
+.grey{
+    background-color: #b1b1b1;
 }
 
 .bell-icon{
@@ -64,6 +66,26 @@ main{
 
 .chat-messages{
     height: calc(100% - 140px);
-    background-color: coral;
+    background-image: url(../img/mine.jpg);
 }
 
+.message{
+    width: 300px;
+    max-width: 300px;
+    padding: 15px 15px;
+    background-color: #d5f9ba;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.my-text{
+    background-color: #d5f9ba;
+}
+
+.interlocutor-text{
+    background-color: #fff;
+}
+
+.time-clock{
+    right: 7px;
+}
