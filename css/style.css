@@ -15,14 +15,15 @@ main{
     left: 50%;
     transform: translate(-50%,0%);
     height: 90vh;
+    background-color: red;
 }
 
 .left-column{
     background-color: #eee;
 }
 
-.right-column{
-    height: 90vh;
+.right-column .row{
+    height: 100%;
     background-color: green;
 }
 
@@ -38,7 +39,8 @@ main{
 
 
 .profile-buttons,
-.chat-buttons{
+.chat-buttons,
+.text-message .fas,.far{
     color: #b1b1b1;
 }
 
@@ -52,24 +54,22 @@ main{
     background-color: #b1b1b1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.chat-messages{
-    background-color: coral;
-    height: 700px;
+.text-message input{
+    height: 45px;
 }
 
 .text-message{
-    background-color: crimson;
-    height: 90px;
+    background-color: #f3ede8;
+    height: 70px;
 }
+
+.chat-messages .row{
+    height: 100%;
+    
+}
+
+.chat-messages{
+    height: calc(100% - 140px);
+    background-color: coral;
+}
+
