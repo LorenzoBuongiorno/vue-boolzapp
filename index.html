@@ -35,7 +35,7 @@
                             </div>
                             <!-- NOTIFICATION -->
                             <div class="notification col-12 d-flex align-items-center p-3">
-                                <div class="bell-icon rounded-circle bg-white me-3">
+                                <div class="bell-icon rounded-circle bg-white me-3 d-flex justify-content-center align-items-center">
                                     <i class="fas fa-bell-slash fs-3"></i>
                                 </div>
                                 <div class="notification-text">
@@ -57,9 +57,9 @@
                             <!-- CONTACT LIST -->
                             <div class="contact-list">
                                 <ul class="list-unstyled">
-                                    <li v-for="(item, i) in contacts" class="d-flex p-2">
+                                    <li v-for="(item, i) in contacts" class="d-flex p-2" :class="i % 2 == 0 ? 'grey' : ''">
                                         <img :src="'img/avatar'+item.avatar+'.jpg'" alt="" class="rounded-circle me-2">
-                                        <div class="name">{{item.name}}</div>
+                                        <div class="name fw-bold ms-2">{{item.name}}</div>
                                     </li>
                                 </ul>
                             </div>

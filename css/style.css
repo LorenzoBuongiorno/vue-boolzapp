@@ -1,5 +1,7 @@
 main{
     position: relative;
+    background-color: #ddd;
+    height: 100vh;
 }
 
 .green-bar{
@@ -12,13 +14,11 @@ main{
     top: 50px;
     left: 50%;
     transform: translate(-50%,0%);
-    background-color: red;
     height: 90vh;
 }
 
 .left-column{
-    height: 90vh;
-    background-color: blue;
+    background-color: #eee;
 }
 
 .right-column{
@@ -37,10 +37,35 @@ main{
 .notification{
     background-color: #8ddafc;
 }
-
-.contact-list{
-    background-color: brown;
+.contact-list li img{
+    height: 60px;
 }
+
+.profile-buttons{
+    color: #b1b1b1;
+}
+
+.bell-icon{
+    width: 70px;
+    height: 70px;
+    color: #8ddafc;
+}
+
+.grey{
+    background-color: #b1b1b1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .profile-opened-chat{
     height: 60px;
@@ -55,17 +80,4 @@ main{
 .text-message{
     background-color: crimson;
     height: 90px;
-}
-
-.contact-list li img{
-    height: 60px;
-}
-
-.profile-buttons{
-    color: #b1b1b1;
-}
-
-.bell-icon{
-    border: 15px solid #fff;
-    color: #8ddafc;
 }
