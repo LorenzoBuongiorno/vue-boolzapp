@@ -27,7 +27,7 @@ main{
 }
 
 .account img{
-    width: 90%;
+    height: 50px;
 }
 
 .account{
@@ -61,4 +61,8 @@ main{
 .text-message{
     background-color: crimson;
     height: 90px;
+}
+
+.contact-list li img{
+    height: 60px;
 }

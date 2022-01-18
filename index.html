@@ -21,7 +21,7 @@
                         <!-- ACCOUNT -->
                         <div class="account col-12 p-2 d-flex justify-content-between">
                             <div class="your-account d-flex align-items-center fs-5">
-                                <div class="profile-picture col-2">
+                                <div class="profile-picture">
                                     <img class="rounded-circle"  src="img/avatar_io.jpg" alt="">
                                 </div>
                                 <span class="profile-name">Nome Profilo</span>
@@ -43,8 +43,8 @@
                         <!-- CONTACT LIST -->
                         <div class="contact-list">
                             <ul class="list-unstyled">
-                                <li v-for="(item, i) in contacts">
-                                    <img :src="'img/avatar'+item.avatar+'.jpg'" alt="">
+                                <li v-for="(item, i) in contacts" class="d-flex p-2">
+                                    <img :src="'img/avatar'+item.avatar+'.jpg'" alt="" class="rounded-circle me-2">
                                     <div class="name">{{item.name}}</div>
                                 </li>
                             </ul>
