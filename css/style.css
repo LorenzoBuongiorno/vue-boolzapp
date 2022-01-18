@@ -22,9 +22,12 @@ main{
     background-color: #eee;
 }
 
-.right-column .row{
+.left-column .row,
+.right-column .row,
+.chat .row,
+.chat-messages .row,
+.contact-list{
     height: 100%;
-    background-color: green;
 }
 
 .account,
@@ -37,10 +40,10 @@ main{
     background-color: #8ddafc;
 }
 
-
 .profile-buttons,
 .chat-buttons,
-.text-message .fas,.far{
+.text-message .fas,.far,
+.grey{
     color: #b1b1b1;
 }
 
@@ -50,10 +53,6 @@ main{
     color: #8ddafc;
 }
 
-.grey{
-    background-color: #b1b1b1;
-}
-
 .text-message input{
     height: 45px;
 }
@@ -61,11 +60,6 @@ main{
 .text-message{
     background-color: #f3ede8;
     height: 70px;
-}
-
-.chat-messages .row{
-    height: 100%;
-    
 }
 
 .chat-messages{
