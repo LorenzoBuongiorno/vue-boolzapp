@@ -22,8 +22,8 @@
                             <!-- ACCOUNT -->
                             <div class="account container col-12 p-2 d-flex justify-content-between">
                                 <div class="your-account d-flex align-items-center fs-5">
-                                    <div class="profile-picture">
-                                        <img class="rounded-circle"  src="img/avatar_io.jpg" alt="">
+                                    <div class="profile-picture  col-2">
+                                        <img class="rounded-circle img-fluid"  src="img/avatar_io.jpg" alt="">
                                     </div>
                                     <span class="profile-name">Nome Profilo</span>
                                 </div>
@@ -58,7 +58,7 @@
                             <div class="contact-list">
                                 <ul class="list-unstyled">
                                     <li v-for="(item, i) in contacts" class="d-flex p-2" :class="i % 2 == 0 ? 'grey' : ''">
-                                        <img :src="'img/avatar'+item.avatar+'.jpg'" alt="" class="rounded-circle me-2">
+                                        <img :src="'img/avatar'+item.avatar+'.jpg'" alt="" class="rounded-circle me-2 img-fluid col-2">
                                         <div class="name fw-bold ms-2">{{item.name}}</div>
                                     </li>
                                 </ul>
@@ -69,17 +69,32 @@
 
                     <!-- RIGHT COLUMN -->
                     <div class="right-column col-8">
-                        <!-- PROFILE CHAT -->
-                        <div class="profile-opened-chat col-12">
-
-                        </div>
-                        <!-- CHAT -->
-                        <div class="chat-messages col-12">
-
-                        </div>
-                        <!-- MESSAGE BAR -->
-                        <div class="text-message col-12">
-
+                        <div class="row">
+                            <!-- PROFILE CHAT -->
+                            <div class="border-start border-4 profile-opened-chat col-12 d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-4">
+                                        <img class="img-fluid rounded-circle" src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="nome-chat-contatto fw-bold">Michele</div>
+                                        <div class="">Ultimo accesso oggi alle </div>
+                                    </div>
+                                </div>
+                                <div class="chat-buttons d-flex align-items-center fs-4">
+                                    <i class="fas fa-search me-3"></i>
+                                    <i class="fas fa-paperclip me-3"></i>
+                                    <i class="fas fa-ellipsis-v me-3"></i>
+                                </div>
+                            </div>
+                            <!-- CHAT -->
+                            <div class="chat-messages col-12">
+    
+                            </div>
+                            <!-- MESSAGE BAR -->
+                            <div class="text-message col-12">
+    
+                            </div>
                         </div>
                     </div>
                 </div>

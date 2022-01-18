@@ -26,22 +26,19 @@ main{
     background-color: green;
 }
 
-.account img{
-    height: 50px;
-}
-
-.account{
+.account,
+.profile-opened-chat{
     background-color: #eaeaea;
+    height: 70px;
 }
 
 .notification{
     background-color: #8ddafc;
 }
-.contact-list li img{
-    height: 60px;
-}
 
-.profile-buttons{
+
+.profile-buttons,
+.chat-buttons{
     color: #b1b1b1;
 }
 
@@ -66,11 +63,6 @@ main{
 
 
 
-
-.profile-opened-chat{
-    height: 60px;
-    background-color: burlywood;
-}
 
 .chat-messages{
     background-color: coral;
