@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    position: relative;
+}
+
+.green-bar{
+    background-color: #009587;
+    height: 20vh;
+}
+
+.chat{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: red;
+    height: 90vh;
+}
+
+.left-column{
+    height: 90vh;
+    background-color: blue;
+}
+
+.right-column{
+    height: 90vh;
+    background-color: green;
+}
+
+.account img{
+    width: 90%;
+}
+
+.account{
+    background-color: yellow;
+}
+
+.notification{
+    background-color: aqua;
+    height: 80px;
+}
+
+.search-contact{
+    background-color: blueviolet;
+    height: 50px;
+}
+
+.contact-list{
+    background-color: brown;
+}
+
+.profile-opened-chat{
+    height: 60px;
+    background-color: burlywood;
+}
+
+.chat-messages{
+    background-color: coral;
+    height: 700px;
+}
+
+.text-message{
+    background-color: crimson;
+    height: 90px;
+}
