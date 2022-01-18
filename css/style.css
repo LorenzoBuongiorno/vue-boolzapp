@@ -31,12 +31,11 @@ main{
 }
 
 .account{
-    background-color: yellow;
+    background-color: #eaeaea;
 }
 
 .notification{
-    background-color: aqua;
-    height: 80px;
+    background-color: #8ddafc;
 }
 
 .search-contact{
@@ -65,4 +64,13 @@ main{
 
 .contact-list li img{
     height: 60px;
+}
+
+.profile-buttons{
+    color: #b1b1b1;
+}
+
+.bell-icon{
+    border: 15px solid #fff;
+    color: #8ddafc;
 }
