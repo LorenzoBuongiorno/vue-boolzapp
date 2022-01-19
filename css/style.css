@@ -97,10 +97,23 @@ main{
     background-color: #d5f9ba;
 }
 
-.interlocutor-text{
+.interlocutor-text,
+.message-menu div{
     background-color: #fff;
 }
 
 .time-clock{
     right: 7px;
+}
+
+.delete-menu,
+.message-menu div{
+    cursor: pointer;
+}
+.message-menu div:hover{
+    background-color: #eee !important;
+}
+
+.message-menu{
+    z-index: 5;
 }

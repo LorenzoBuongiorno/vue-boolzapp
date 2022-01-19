@@ -92,6 +92,11 @@
                                     <div v-if="item.status == 'sent'">
                                         <div class="d-flex justify-content-end mb-3">
                                             <div class="my-text message position-relative">
+                                                <i @click="deleteMenu(i)" class="delete-menu fas fa-angle-down text-black-50 position-absolute end-0 pe-3 fs-5 position-relative"></i>
+                                                <div v-if="messageMenu && i == messageClicked" class="message-menu position-absolute">
+                                                    <div class="p-2 bg-white text-center fs-6">message info</div>
+                                                    <div @click="deleteMessage(i)" class="p-2 bg-white text-center fs-6">delete message</div>
+                                                </div>
                                                 <div class=" fs-6 fw-bold">{{item.text}}</div>
                                                 <div class="time-clock text-black-50 position-absolute bottom-0">10/10/10 24:24:24</div>
                                             </div>

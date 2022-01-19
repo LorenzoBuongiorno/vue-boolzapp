@@ -92,7 +92,8 @@ new Vue({
         openChat: 0,
         temporaryText: '',
         contactSearch: '',
-
+        messageMenu: false,
+        messageClicked: 0,
         
        },
 
@@ -123,8 +124,17 @@ new Vue({
             }, 1000);
         },
 
+        deleteMenu: function(index){
+            this.messageMenu = !this.messageMenu;
+            this.messageClicked = index;
+        },
+        deleteMessage: function(index){
+            this.contacts[this.openChat].messages.splice(index, 1)
+        }
+
         
     },
+
     computed: {
         searchFilter: function() {
             return this.contacts.filter(item => item.name.toLowerCase().includes(this.contactSearch.toLowerCase()))
