@@ -109,8 +109,20 @@ new Vue({
                 text: this.temporaryText,
                 status: 'sent'
             }),
-            this.temporaryText = ""
+            this.temporaryText = "",
+
+
+
+            setTimeout(() => {
+                this.contacts[this.openChat].messages.push({
+                    date: '10/01/2020 15:30:55',
+                    text: 'ok',
+                    status: 'recived'
+                })
+            }, 1000);
         },
+
+        
 
 
 
