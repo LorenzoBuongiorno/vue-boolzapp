@@ -27,6 +27,11 @@ main{
     height: 100%;
 }
 
+.contact-list li:hover{
+    cursor: pointer;
+    background-color: #ddd;
+}
+
 .account,
 .profile-opened-chat{
     background-color: #eaeaea;

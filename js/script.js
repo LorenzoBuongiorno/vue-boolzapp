@@ -97,6 +97,9 @@ new Vue({
 
 
        methods: {
+           chooseChat: function (index){
+               this.openChat = index;
+           }
 
 
 
