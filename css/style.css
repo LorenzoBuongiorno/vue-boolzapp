@@ -22,8 +22,7 @@ main{
 .left-column .row,
 .right-column .row,
 .chat .row,
-.chat-messages .row,
-.contact-list{
+.chat-messages .row{
     height: 100%;
 }
 
@@ -40,6 +39,15 @@ main{
 
 .notification{
     background-color: #8ddafc;
+    height: 90px;
+}
+
+.search{
+    height: 20px;
+}
+
+.contact-list{
+    height: calc(100% - 180px);
 }
 
 .profile-buttons,

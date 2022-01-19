@@ -90,6 +90,7 @@ new Vue({
 
         
         openChat: 0,
+        temporaryText: '',
 
         
        },
@@ -99,7 +100,17 @@ new Vue({
        methods: {
            chooseChat: function (index){
                this.openChat = index;
-           }
+           },
+
+           addItem: function () {
+
+            this.contacts[this.openChat].messages.push({
+                date: '10/01/2020 15:30:55',
+                text: this.temporaryText,
+                status: 'sent'
+            }),
+            this.temporaryText = ""
+        },
 
 
 

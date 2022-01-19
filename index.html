@@ -110,7 +110,7 @@
                             <!-- MESSAGE BAR -->
                             <div class="text-message col-12 d-flex justify-content-between align-items-center p-2">
                                 <i class="far fa-smile col-1 text-center fs-3"></i>
-                                <input type="text" class="col-10 rounded-3 border-0" placeholder="      Scrivi un messaggio">
+                                <input v-model="temporaryText" @keyup.enter="addItem" type="text" class="col-10 rounded-3 border-0" placeholder="      Scrivi un messaggio">
                                 <i class="fas fa-microphone col-1 text-center fs-3"></i>
                             </div>
                         </div>
