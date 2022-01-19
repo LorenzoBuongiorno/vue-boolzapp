@@ -2,12 +2,10 @@ main{
     position: relative;
     background-color: #ddd;
     height: 100vh;
+    background: rgb(221,221,221);
+    background: linear-gradient(0deg, rgba(221,221,221,1) 81%, rgba(0,149,135,1) 81%);
 }
 
-.green-bar{
-    background-color: #009587;
-    height: 20vh;
-}
 
 .chat{
     position: absolute;
