@@ -49,14 +49,14 @@
                                         <i class="fas fa-search"></i>
                                     </div>
                                     <div class="text-input-search col-11">
-                                        <input class="border-0 container-fluid" placeholder="Cerca o iniza una nuova chat" type="text">
+                                        <input v-model="contactSearch" class="border-0 container-fluid" placeholder="Cerca o iniza una nuova chat" type="text">
                                     </div>
                                 </div>
                             </div>
                             <!-- CONTACT LIST -->
                             <div class="contact-list">
                                 <ul class="list-unstyled">
-                                    <li v-for="(item, i) in contacts" class="d-flex p-2" :class="i == openChat ? 'grey' : ''"  @click="chooseChat(i)">
+                                    <li v-for="(item, i) in searchFilter" class="d-flex p-2" :class="i == openChat ? 'grey' : ''" @click="chooseChat(i)">
                                         <img :src="'img/avatar'+item.avatar+'.jpg'" alt="" class="rounded-circle me-2 img-fluid col-2">
                                         <div class="name fw-bold ms-2">{{item.name}}</div>
                                     </li>

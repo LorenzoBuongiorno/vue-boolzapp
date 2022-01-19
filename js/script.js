@@ -91,6 +91,7 @@ new Vue({
         
         openChat: 0,
         temporaryText: '',
+        contactSearch: '',
 
         
        },
@@ -123,9 +124,11 @@ new Vue({
         },
 
         
-
-
-
-
+    },
+    computed: {
+        searchFilter: function() {
+            return this.contacts.filter(item => item.name.toLowerCase().includes(this.contactSearch.toLowerCase()))
+        }
+        
        }
 })
