@@ -21,9 +21,13 @@ main{
 
 .left-column .row,
 .right-column .row,
-.chat .row,
-.chat-messages .row{
+.chat .row{
     height: 100%;
+}
+
+.chat-messages{
+    max-height: 100%;
+    overflow-y: scroll;
 }
 
 .contact-list li:hover{
