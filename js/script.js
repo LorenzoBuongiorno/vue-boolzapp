@@ -88,6 +88,16 @@ new Vue({
             },
         ],
 
+        answer:[
+            'davvero? non lo sapevo!',
+            'ok',
+            'sicuro?',
+            'no non ci credo',
+            'ricordati anche di pulire la casa',
+            'salutami la famiglia',
+            'buon anno 2007!',
+        ],
+
         
         openChat: 0,
         temporaryText: '',
@@ -118,7 +128,7 @@ new Vue({
             setTimeout(() => {
                 this.contacts[this.openChat].messages.push({
                     date: '10/01/2020 15:30:55',
-                    text: 'ok',
+                    text: this.answer[Math.round(Math.random() * (this.answer.length - 0)) + 0],
                     status: 'recived'
                 })
             }, 1000);
@@ -131,7 +141,8 @@ new Vue({
         deleteMessage: function(index){
             this.contacts[this.openChat].messages.splice(index, 1);
             this.messageMenu = false;
-        }
+        },
+        
 
         
     },
