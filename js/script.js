@@ -129,7 +129,8 @@ new Vue({
             this.messageClicked = index;
         },
         deleteMessage: function(index){
-            this.contacts[this.openChat].messages.splice(index, 1)
+            this.contacts[this.openChat].messages.splice(index, 1);
+            this.messageMenu = false;
         }
 
         
