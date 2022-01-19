@@ -86,12 +86,16 @@ new Vue({
                     }
                 ],
             },
-        ]
+        ],
 
         
+        openChat: 0,
 
         
        },
+
+
+
        methods: {
 
 

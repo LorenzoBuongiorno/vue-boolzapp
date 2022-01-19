@@ -88,25 +88,24 @@
                             </div>
                             <!-- CHAT -->
                             <div class="chat-messages col-12 p-5">
-                                <div class="d-flex justify-content-end mb-3">
-                                    <div class="my-text message position-relative">
-                                        <div class=" fs-6 fw-bold">hai portato a spasso il cane?</div>
-                                        <div class="time-clock text-black-50 position-absolute bottom-0">10/10/10 24:24:24</div>
+                                <div v-for="(item, i) in contacts[openChat].messages">
+                                    <div v-if="item.status == 'sent'">
+                                        <div class="d-flex justify-content-end mb-3">
+                                            <div class="my-text message position-relative">
+                                                <div class=" fs-6 fw-bold">{{item.text}}</div>
+                                                <div class="time-clock text-black-50 position-absolute bottom-0">10/10/10 24:24:24</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div v-else>
+                                        <div class="d-flex justify-content-start mb-3">
+                                            <div class="interlocutor-text message position-relative">
+                                                <div class=" fs-6 fw-bold">{{item.text}}</div>
+                                                <div class="time-clock text-black-50 position-absolute bottom-0">10/10/10 24:24:24</div>
+                                            </div> 
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-end mb-3">
-                                    <div class="my-text message position-relative">
-                                        <div class=" fs-6 fw-bold">ricordati di dargli da mangiare</div>
-                                        <div class="time-clock text-black-50 position-absolute bottom-0">10/10/10 24:24:24</div>
-                                    </div>  
-                                </div>
-                                <div class="d-flex justify-content-start mb-3">
-                                    <div class="interlocutor-text message position-relative">
-                                        <div class=" fs-6 fw-bold">Tutto fatto!</div>
-                                        <div class="time-clock text-black-50 position-absolute bottom-0">10/10/10 24:24:24</div>
-                                    </div> 
-                                </div>
-                                
                             </div>
                             <!-- MESSAGE BAR -->
                             <div class="text-message col-12 d-flex justify-content-between align-items-center p-2">
