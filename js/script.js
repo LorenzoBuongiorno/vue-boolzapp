@@ -128,7 +128,7 @@ new Vue({
             setTimeout(() => {
                 this.contacts[this.openChat].messages.push({
                     date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
-                    text: this.answer[Math.round(Math.random() * (this.answer.length - 0)) + 0],
+                    text: this.answer[Math.round(Math.random() * ((this.answer.length - 1) - 0)) + 0],
                     status: 'recived'
                 })
             }, 1000);
