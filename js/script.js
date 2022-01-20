@@ -117,7 +117,7 @@ new Vue({
            addItem: function () {
 
             this.contacts[this.openChat].messages.push({
-                date: '10/01/2020 15:30:55',
+                date:  dayjs().format('DD/MM/YYYY HH:mm:ss'),
                 text: this.temporaryText,
                 status: 'sent'
             }),
@@ -127,7 +127,7 @@ new Vue({
 
             setTimeout(() => {
                 this.contacts[this.openChat].messages.push({
-                    date: '10/01/2020 15:30:55',
+                    date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                     text: this.answer[Math.round(Math.random() * (this.answer.length - 0)) + 0],
                     status: 'recived'
                 })

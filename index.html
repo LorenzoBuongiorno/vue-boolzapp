@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
 </head>
 <body>
     <div id="app">
@@ -89,6 +91,7 @@
                             <!-- CHAT -->
                             <div class="chat-messages col-12 p-5">
                                 <div v-for="(item, i) in contacts[openChat].messages">
+                                    <!-- messaggio inviato -->
                                     <div v-if="item.status == 'sent'">
                                         <div class="d-flex justify-content-end mb-3">
                                             <div class="my-text message position-relative">
@@ -98,15 +101,16 @@
                                                     <div @click="deleteMessage(i)" class="p-2 bg-white text-center fs-6">delete message</div>
                                                 </div>
                                                 <div class=" fs-6 fw-bold">{{item.text}}</div>
-                                                <div class="time-clock text-black-50 position-absolute bottom-0">10/10/10 24:24:24</div>
+                                                <div class="time-clock text-black-50 position-absolute bottom-0">{{item.date}}</div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- messaggio ricevuto -->
                                     <div v-else>
                                         <div class="d-flex justify-content-start mb-3">
                                             <div class="interlocutor-text message position-relative">
                                                 <div class=" fs-6 fw-bold">{{item.text}}</div>
-                                                <div class="time-clock text-black-50 position-absolute bottom-0">10/10/10 24:24:24</div>
+                                                <div class="time-clock text-black-50 position-absolute bottom-0">{{item.date}}</div>
                                             </div> 
                                         </div>
                                     </div>
