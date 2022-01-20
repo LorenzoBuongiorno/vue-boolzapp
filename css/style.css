@@ -1,5 +1,4 @@
 main{
-    position: relative;
     background-color: #ddd;
     height: 100vh;
     background: rgb(221,221,221);
@@ -8,10 +7,6 @@ main{
 
 
 .chat{
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%,0%);
     height: 90vh;
 }
 
@@ -21,17 +16,16 @@ main{
 
 .left-column .row,
 .right-column .row,
-.chat .row{
+.chat .row,
+.chat-messages{
     height: 100%;
 }
 
 .chat-messages{
-    height: 100%;
     overflow-y: scroll;
 }
 
 .contact-list li:hover{
-    cursor: pointer;
     background-color: #ddd;
 }
 
@@ -97,17 +91,13 @@ main{
     background-color: #d5f9ba;
 }
 
-.interlocutor-text,
-.message-menu div{
-    background-color: #fff;
-}
-
 .time-clock{
     right: 7px;
 }
 
 .delete-menu,
-.message-menu div{
+.message-menu div,
+.contact-list li{
     cursor: pointer;
 }
 .message-menu div:hover{

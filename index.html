@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="app">
-        <main>
+        <main class=" d-flex justify-content-center align-items-center">
             <div class="chat col-8">
                 <div class="row">
                     <!-- LEFT COLUMN -->
@@ -114,7 +114,7 @@
                                     <!-- messaggio ricevuto -->
                                     <div v-else>
                                         <div class="d-flex justify-content-start mb-3">
-                                            <div class="interlocutor-text message position-relative">
+                                            <div class="bg-white message position-relative">
                                                 <div class=" fs-6 fw-bold">{{item.text}}</div>
                                                 <div class="time-clock text-black-50 position-absolute bottom-0">{{item.date}}</div>
                                             </div> 
