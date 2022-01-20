@@ -5,7 +5,6 @@ main{
     background: linear-gradient(0deg, rgba(221,221,221,1) 81%, rgba(0,149,135,1) 81%);
 }
 
-
 .chat{
     height: 90vh;
 }
@@ -48,9 +47,13 @@ main{
     height: calc(100% - 180px);
 }
 
-.profile-buttons,
-.chat-buttons,
-.text-message .fas,.far{
+.notification-text a,
+.notification-text a:hover{
+    color: #000;
+}
+
+a,
+a:hover{
     color: #b1b1b1;
 }
 
@@ -100,6 +103,7 @@ main{
 .contact-list li{
     cursor: pointer;
 }
+
 .message-menu div:hover{
     background-color: #eee !important;
 }

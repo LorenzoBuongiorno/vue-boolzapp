@@ -28,10 +28,10 @@
                                     </div>
                                     <span class="profile-name">Nome Profilo</span>
                                 </div>
-                                <div class="profile-buttons d-flex align-items-center fs-4">
-                                    <i class="fas fa-circle-notch me-3"></i>
-                                    <i class="fas fa-comment-alt me-3"></i>
-                                    <i class="fas fa-ellipsis-v me-3"></i>
+                                <div class="d-flex align-items-center fs-4">
+                                    <a href="#"><i class="fas fa-circle-notch me-3"></i></a>
+                                    <a href="#"><i class="fas fa-comment-alt me-3"></i></a>
+                                    <a href="#"><i class="fas fa-ellipsis-v me-3"></i></a>
                                 </div>
                             </div>
                             <!-- NOTIFICATION -->
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="notification-text">
                                     <div class="fw-bold fs-6">Ricevi notifiche di nuovi messaggi</div>
-                                    <div class="text-decoration-underline fs-6">Attiva notifiche desktop</div>
+                                    <a href="#" class="fs-6">Attiva notifiche desktop</a>
                                 </div>
                             </div>
                             <!-- SEARCH -->
@@ -87,10 +87,10 @@
                                         <div class="">Ultimo accesso oggi alle </div>
                                     </div>
                                 </div>
-                                <div class="chat-buttons d-flex align-items-center fs-4">
-                                    <i class="fas fa-search me-3"></i>
-                                    <i class="fas fa-paperclip me-3"></i>
-                                    <i class="fas fa-ellipsis-v me-3"></i>
+                                <div class="d-flex align-items-center fs-4">
+                                    <a href="#"><i class="fas fa-search me-3"></i></a>
+                                    <a href="#"><i class="fas fa-paperclip me-3"></i></a>
+                                    <a href="#"><i class="fas fa-ellipsis-v me-3"></i></a>
                                 </div>
                             </div>
                             <!-- CHAT -->
@@ -123,9 +123,9 @@
                             </div>
                             <!-- MESSAGE BAR -->
                             <div class="text-message col-12 d-flex justify-content-between align-items-center p-2">
-                                <i class="far fa-smile col-1 text-center fs-3"></i>
+                                <a href="#"><i class="far fa-smile col-1 text-center fs-3 ms-3"></i></a>
                                 <input v-model="temporaryText" @keyup.enter="addItem" type="text" class="col-10 rounded-3 border-0" placeholder="      Scrivi un messaggio">
-                                <i class="fas fa-microphone col-1 text-center fs-3"></i>
+                                <a href="#"><i class="fas fa-microphone col-1 text-center fs-3 me-3"></i></a>
                             </div>
                         </div>
                     </div>

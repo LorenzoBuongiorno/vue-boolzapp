@@ -108,12 +108,13 @@ new Vue({
        },
 
 
-
        methods: {
+           //contact chat
            chooseChat: function (index){
                this.openChat = index;
            },
 
+           //send the message
            addItem: function () {
 
             this.contacts[this.openChat].messages.push({
@@ -123,8 +124,7 @@ new Vue({
             }),
             this.temporaryText = "",
 
-
-
+            //send a random answer
             setTimeout(() => {
                 this.contacts[this.openChat].messages.push({
                     date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
@@ -134,6 +134,7 @@ new Vue({
             }, 1000);
         },
 
+        //messages poup-up menu
         deleteMenu: function(index){
             this.messageMenu = !this.messageMenu;
             this.messageClicked = index;
@@ -143,9 +144,7 @@ new Vue({
             this.messageMenu = false;
         },
         
-        
-
-        
+ 
     },
 
 })
