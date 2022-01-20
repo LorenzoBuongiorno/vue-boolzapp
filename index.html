@@ -58,7 +58,7 @@
                             <!-- CONTACT LIST -->
                             <div class="contact-list">
                                 <ul class="list-unstyled">
-                                    <li v-for="(item, i) in searchFilter" class="d-flex p-2" :class="i == openChat ? 'grey' : ''" @click="chooseChat(i)">
+                                    <li v-for="(item, i) in contacts" v-if="item.name.toLowerCase().includes(contactSearch)" class="d-flex p-2" :class="i == openChat ? 'grey' : ''" @click="chooseChat(i)">
                                         <img :src="'img/avatar'+item.avatar+'.jpg'" alt="" class="rounded-circle me-2 img-fluid col-2">
                                         <div class="name fw-bold ms-2">{{item.name}}</div>
                                     </li>
