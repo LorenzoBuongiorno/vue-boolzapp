@@ -78,13 +78,17 @@
                         <div class="row">
                             <!-- PROFILE CHAT -->
                             <div class="border-start border-4 profile-opened-chat col-12 d-flex justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-4">
-                                        <img class="img-fluid rounded-circle" src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="nome-chat-contatto fw-bold">Michele</div>
-                                        <div class="">Ultimo accesso oggi alle </div>
+                                <div v-for="(item, i) in contacts">
+                                    <div v-if="i == openChat">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-2 col-1">
+                                                <img class="img-fluid rounded-circle" :src="'img/avatar'+item.avatar+'.jpg'" alt="">
+                                            </div>
+                                            <div class="">
+                                                <div class="nome-chat-contatto fw-bold">{{item.name}}</div>
+                                                <div class="">Ultimo accesso:{{'Ultimo accesso:' + item.messages[item.messages.length - 1].date}}</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center fs-4">
