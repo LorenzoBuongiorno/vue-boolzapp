@@ -63,8 +63,7 @@
                                             <img :src="'img/avatar'+item.avatar+'.jpg'" alt="" class="rounded-circle me-2 img-fluid col-2">
                                             <div>
                                                 <div class="name fw-bold ms-2">{{item.name}}</div>
-                                                <div class="name ms-2" v-for="(message, i) in  item.messages">
-                                                    <div v-if="message.status == 'received'">{{'Ultimo accesso:' + message.date}}</div></div>
+                                                <div class="name ms-2">{{'Ultimo accesso:' + item.messages[item.messages.length - 1].date}}</div>
                                             </div>
                                         </div>
                                     </li>
