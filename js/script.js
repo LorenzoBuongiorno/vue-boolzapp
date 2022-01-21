@@ -112,6 +112,7 @@ new Vue({
            //contact chat
            chooseChat: function (index){
                this.openChat = index;
+               this.messageMenu = false;
            },
 
            //send the message
@@ -123,6 +124,7 @@ new Vue({
                 status: 'sent'
             }),
             this.temporaryText = "",
+            this.messageMenu = false,
 
             //send a random answer
             setTimeout(() => {
